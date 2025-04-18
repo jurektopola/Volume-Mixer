@@ -12,4 +12,5 @@ def getValue():
     read = str(value, 'UTF-8')
 
     volumeValue = float(read[0:4])
+    print(volumeValue)
     return volumeValue
