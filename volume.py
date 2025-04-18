@@ -15,4 +15,4 @@ while True:
     for sessions in sessions:
         TIDALvolume = sessions._ctl.QueryInterface(ISimpleAudioVolume)
         if sessions.Process and sessions.Process.name() == "TIDALPlayer.exe":
-            TIDALvolume.źSetMasterVolume(getValue(), None)
+            TIDALvolume.SetMasterVolume(getValue(), None)
