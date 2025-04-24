@@ -2,6 +2,9 @@ from ctypes import cast, POINTER
 from comtypes import CLSCTX_ALL
 from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume, ISimpleAudioVolume
 from decode import masterVolume, pot1, pot2, pot3, pot4
+'''
+This file is under development, in future it will be responsible for controlling different applications volume with potentiometers
+'''
 
 if __name__ == "__main__":
     devices = AudioUtilities.GetSpeakers()
