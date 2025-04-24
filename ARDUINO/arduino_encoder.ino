@@ -5,7 +5,7 @@ const int pot3 = A3;
 const int pot4 = A4;
 const int MaxADC = 1023;
 
-// Output mapping range
+// Master output mapping range
 const float MasterMinOutput = -65.0;
 const float MasterMaxOutput = 0.0;
 
@@ -14,7 +14,6 @@ void setup() {
 }
 
 void loop() {
-  //CAUTION!!! I am using logarythmic potentiometer for MasterVolume, 'MasterConverter()' is imitating inverted logarythmic pot action 
   float masterValue = MasterConverter(analogRead(potMaster));
 
   float pot1Value = AppsConverter(analogRead(pot1));
@@ -38,7 +37,7 @@ void loop() {
 float MasterConverter(float raw){
   float norm = (float)raw / MaxADC;  // Normalize to 0.0 – 1.0
 
-  // Apply curve: higher exponent = faster drop near 1023 | 0.08 is set that half pot range sets volume to 50%
+  // Apply curve: higher exponent = faster drop near 1023 | 0.27 is set almost that half pot range sets volume to 50%
   float curved = pow(norm, 0.27);
 
   // Map to desired output range
