@@ -9,8 +9,11 @@ for session in sessions:
         print(session.Process.name())
 
 '''
-list of applications controlled by potentiometers, change it by typing different session name to list
+POTENTIOMETER 0 CONTROLS MASTER VOLUME
+
+Below are lists of applications controlled by potentiometers, type different process names to change applications
 If there is more than one session name in list, the potentiometer will control all of them
+Each list is controlled by one potentiometer, for example 'apps1' is controlled by potentiometer 1
 '''
 
 apps1 = ['Discord.exe']
