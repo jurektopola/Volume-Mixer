@@ -31,7 +31,7 @@ void loop() {
   Serial.print(":");
   Serial.println(pot4Value);
   
-  delay(100);
+  delay(50);
 }
 
 float MasterConverter(float raw){
