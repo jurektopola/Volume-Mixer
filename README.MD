@@ -8,7 +8,7 @@ File `arduino_encoder.ino` contained in `ARDUINO` folder should be copied to the
 # Mixer run
 Arduino should run, when connected to power.
 
-You need to have python installed. Connect Arduino Uno by USB (with data transfer) to your PC.
+You need to have python installed. Connect Arduino Uno by USB (with data transfer) to your PC.  
 **You can enable autostart for this shortcut to automatically run software when starting your PC.**
 
 1. Create shortcut to `main.pyw`
